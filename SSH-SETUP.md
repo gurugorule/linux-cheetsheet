@@ -1,18 +1,19 @@
 # how to setup ssh key in your Machine 
----
-In your terminal type 
- * ssh-keygen -t ed25519 -C "your email"
 
-- set the password and it will create .ssh file in /home/user dir 
-- in .ssh dir your private and public key is saved 
- * don't share your private key 
+``` bash
+ssh-keygen -t ed25519 -C "your email"
+```
 
-copy your public key and go to github.com/settings/keys 
-over there add your public ket 
+Set the password and it will create .ssh file in home dir, your private and public key is saved in .shh
 
-Now in terminal type:
- * ssh-add 
-- it will add ssh agent 
+```bash
+eval "$(ssh-agent -s)"
 
-Now you are good to go 
-- clone any repo vai ssh and push your code 
+ssh-add ~/.ssh/id_ed25519
+# it will add ssh agent 
+```
+
+Now you are good to go! Clone any repo vai ssh and push your code 
+
+> [!WARNING]
+> This repo is still under developement, Only For Ubuntu users! 
