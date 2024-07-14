@@ -16,4 +16,4 @@ ssh-add ~/.ssh/id_ed25519
 Now you are good to go! Clone any repo vai ssh and push your code 
 
 > [!WARNING]
-> This repo is still under developement, Only For Ubuntu users! 
+> Do not Share your private key 
