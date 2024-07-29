@@ -12,7 +12,7 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 # it will add ssh agent 
 ```
-
+add your public SSH key to GitHub 
 Now you are good to go! Clone any repo vai ssh and push your code 
 
 > [!WARNING]
